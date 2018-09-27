@@ -15,7 +15,7 @@ const chalk = require('chalk')
       console.log(`${chalk.green(`\u{2713}`)} ${desc}\n`)
       passing++;
     } catch (e) {
-      console.log(`${chalk.red(`\u{2717}`)} AssertionError: ${e.message}`);
+      console.log(`${chalk.red(`\u{2717}`)} ${desc} \n AssertionError: ${e.message}\n `);
       failing++;
     }
   }
